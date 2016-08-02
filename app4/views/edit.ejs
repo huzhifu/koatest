@@ -1,0 +1,11 @@
+<%- include header.ejs %>
+<div class="main box">
+    <div class="box post">
+        <h2>修改</h2>
+        <form action="/sumbit/<%- item._id -%>" method="post">
+            <p><input type="text" name="title" class="long_txt" value="<%-item.title -%>" /></p>
+            <p><input type="submit" class="submit" value="提交" /></p>
+        </form>
+    </div>
+</div>
+<%- include footer.ejs %>
